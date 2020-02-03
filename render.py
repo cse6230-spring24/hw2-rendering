@@ -15,7 +15,7 @@ cutoff = None if len(argv) <= 3 else float(argv[3])
 
 
 # Helper Functions
-def circle_as_4_tuple(center_x, center_y, size):
+def circle_to_box(center_x, center_y, size):
     return (center_x - size, center_y - size,
             center_x + size, center_y + size)
 
@@ -41,7 +41,7 @@ with open(input_file, 'r') as f:
 
             if cutoff:
                 cutuff_radius = int(1024 * (cutoff / box_size))
-                drawer.ellipse(circle_as_4_tuple(center_x, center_y, cutuff_radius), 'yellow')
-            drawer.ellipse(circle_as_4_tuple(center_x, center_y, 1), 'black')
+                drawer.ellipse(circle_to_box(center_x, center_y, cutuff_radius), 'yellow')
+            drawer.ellipse(circle_to_box(center_x, center_y, 1), 'black')
 
     frames[0].save(output_file, format='GIF', append_images=frames[1:], save_all=True, duration=100, loop=0)
