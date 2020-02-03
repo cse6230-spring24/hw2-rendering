@@ -2,10 +2,11 @@
 from sys import argv
 from PIL import Image
 from PIL import ImageDraw
+import sys
 
 # Parse Command Line Arguments
 if len( argv ) < 3:
-    print( "Usage is render.py <input file> <output file> [cutoff]" )
+    sys.exit("Usage is render.py <input file> <output file> [cutoff]")
 
 input_file  = argv[1]
 output_file = argv[2]
