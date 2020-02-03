@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python
 from sys import argv
 from PIL import Image
 from PIL import ImageDraw
