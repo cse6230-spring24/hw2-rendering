@@ -1,11 +1,9 @@
-# CS 267 Nbody Project Rendering
+# CSE 6230 Nbody Project Rendering
 
-This program renders the output from the CS 267 nbody simulation project.
+This program renders the output from the CSE 6230 nbody simulation for HW2.
 
 Synopsis: `render.py <input_file> <output_file.gif> [cutoff]`
 
 Example: `./render.py save.txt image.gif 0.01`
 
-Requires: Python 3 and pillow
-
-![example gif](example.gif)
+Code was originally from the UC Berkeley CS267 course.
